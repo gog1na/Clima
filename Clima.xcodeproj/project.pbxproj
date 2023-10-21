@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		25AADBD92ADFEA1B00B75152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AADBD82ADFEA1B00B75152 /* AppDelegate.swift */; };
 		25AADBDB2ADFEA1B00B75152 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AADBDA2ADFEA1B00B75152 /* SceneDelegate.swift */; };
-		25AADBDD2ADFEA1B00B75152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AADBDC2ADFEA1B00B75152 /* ViewController.swift */; };
+		25AADBDD2ADFEA1B00B75152 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AADBDC2ADFEA1B00B75152 /* WeatherViewController.swift */; };
 		25AADBE02ADFEA1B00B75152 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25AADBDE2ADFEA1B00B75152 /* Weather.storyboard */; };
 		25AADBE22ADFEA1F00B75152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AADBE12ADFEA1F00B75152 /* Assets.xcassets */; };
 		25AADBE52ADFEA1F00B75152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25AADBE32ADFEA1F00B75152 /* LaunchScreen.storyboard */; };
+		25BF92192AE15E95008D1377 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF92182AE15E95008D1377 /* WeatherManager.swift */; };
+		25BF921B2AE16785008D1377 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BF921A2AE16785008D1377 /* WeatherData.swift */; };
+		25FD17E32AE29B4100733167 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD17E22AE29B4100733167 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25AADBD52ADFEA1B00B75152 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AADBD82ADFEA1B00B75152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25AADBDA2ADFEA1B00B75152 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25AADBDC2ADFEA1B00B75152 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25AADBDC2ADFEA1B00B75152 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		25AADBDF2ADFEA1B00B75152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Weather.storyboard; sourceTree = "<group>"; };
 		25AADBE12ADFEA1F00B75152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25AADBE42ADFEA1F00B75152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25AADBE62ADFEA1F00B75152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25BF92182AE15E95008D1377 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		25BF921A2AE16785008D1377 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		25FD17E22AE29B4100733167 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,7 @@
 		25AADBF12ADFECE000B75152 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				25AADBDC2ADFEA1B00B75152 /* ViewController.swift */,
+				25AADBDC2ADFEA1B00B75152 /* WeatherViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -86,6 +92,9 @@
 		25AADBF22ADFECF600B75152 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25BF92182AE15E95008D1377 /* WeatherManager.swift */,
+				25BF921A2AE16785008D1377 /* WeatherData.swift */,
+				25FD17E22AE29B4100733167 /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25AADBDD2ADFEA1B00B75152 /* ViewController.swift in Sources */,
+				25AADBDD2ADFEA1B00B75152 /* WeatherViewController.swift in Sources */,
+				25BF921B2AE16785008D1377 /* WeatherData.swift in Sources */,
 				25AADBD92ADFEA1B00B75152 /* AppDelegate.swift in Sources */,
+				25BF92192AE15E95008D1377 /* WeatherManager.swift in Sources */,
+				25FD17E32AE29B4100733167 /* WeatherModel.swift in Sources */,
 				25AADBDB2ADFEA1B00B75152 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
